@@ -6,18 +6,45 @@
         <meta name="description" content="Johny KLG">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            body{margin:0;background:#222 url('back.jpg') no-repeat center center fixed;background-size:cover;}
-            #container{position:absolute;top:9px;left:30px;right:30px;}
+            body{margin:0;background:#000 url('bac.jpg') no-repeat center center fixed;background-size:cover;}
+            #JohnyKLG{position:fixed;top:60px;right:0px;height:calc(100% - 100px);filter:grayscale(60%);}
 
-            #top_left{position:absolute;top:0px;left:0px;font:20px monospace;font-weight:normal;color:lime;}
+            #top{position:fixed;top:0px;left:0px;right:0px;height:60px;background: url('back.jpg') no-repeat top center fixed;background-size:cover;box-shadow: 0px 0px 25px #000;}
+
+            #top_left{position:absolute;top:12px;left:30px;font:20px monospace;font-weight:normal;color:lime;}
             #top_left b{font:27px monospace;font-weight:normal;color:yellow;}
             #top_left i{font:20px monospace;font-weight:bold;color:yellow;}
+
+            #top_right{position:absolute;top:15px;right:18px;}
+            #top_right button{background:none;border:0;color:#ddd;font:13px monospace;padding:0;margin:0 12px;height:30px;outline:none;}
+            #top_right button:hover{color:lime;cursor:pointer;}
+
+            #bottom{position:fixed;bottom:0px;left:0px;right:0px;height:100px;background: url('back.jpg') no-repeat bottom center fixed;background-size:cover;box-shadow: 0px 0px 25px #000;}
+            #bottom div{position:absolute;top:25px;width:100%;text-align:center;}
+            #bottom div img{margin:0 17px;filter:drop-shadow(0px 0px 9px #000);}
         </style>
     </head>
     <body>
-        <div id="container">
-            <div id="top">
-                <div id="top_left" title="Johny KLG Programador"><b><</b>Johny<i>KLG</i><b>></b></div>
+        <img id="JohnyKLG" src="JohnyKLG.png" />
+        <div id="top">
+            <div id="top_left" title="Johny KLG Programador"><b><</b>Johny<i>KLG</i><b>></b></div>
+            <div id="top_right">
+                <button title="GitHub" onclick="window.open('https://github.com/JohnyKLG')">GitHub</button>
+                <button title="Twitter" onclick="window.open('https://twitter.com/JohnyKLG')">Twitter</button>
+                <button title="Instagram" onclick="window.open('https://instagram.com/JohnyKLG')">Instagram</button>
+                <button title="Facebook" onclick="window.open('https://facebook.com/JohnyKLG')">Facebook</button>
+                <button title="E-mail" onclick="location.href='mailto:johnyklg@outlook.com'">E-mail</button>
+            </div>
+        </div>
+        <div id="bottom">
+            <div>
+                <img src="C.png" height="50px">
+                <img src="C++.png" height="50px">
+                <img src="Csh.png" height="50px">
+                <img src="Perl.png" height="50px">
+                <img src="PHP.png" height="50px">
+                <img src="Python.png" height="50px">
+                <img src="JS.png" height="50px">
             </div>
         </div>
     </body>
