@@ -21,7 +21,7 @@
 
 body{margin:0px;background:#000 url('image/circuit.png')no-repeat center center fixed;background-size:cover;}
 .container{position:relative;top:0px;left:50%;transform:translateX(-50%);width:1000px;}
-section{display:flex;}
+section{position:relative;display:flex;width:100%;}
 
 header{position:fixed;top:0px;left:0px;z-index:1;width:100%;height:50px;background:#000000aa;box-shadow: 0px 2px 15px rgb(0, 165, 177);}
 header nav{position:relative;top:0px;left:50%;transform:translateX(-50%);width:1000px;height:100%;}
@@ -47,7 +47,7 @@ header nav #personal a:hover, header nav #social a:hover{color:#fff;}
 #sobre #t2{width:320px;float:right;}
 #sobre img{width:120px;border-radius:50%;border:3px dotted rgb(0, 165, 177);margin-right:10px;}
 #sobre th{font:23px monospace;text-align:left;height:40px;color:rgb(0, 165, 177);}
-#sobre td{font:14px monospace;padding:0 20px 0 0;text-align:justify;color:rgb(0, 165, 177);}
+#sobre td{font:14px monospace;padding-right:20px;text-align:justify;color:rgb(0, 165, 177);}
 #sobre table input{width:100%;}
 #sobre .input{background:#000;border-radius:5px;font:10px monospace;padding:2px 10px;text-align:left;box-shadow: 0px 0px 2px rgb(0, 165, 177);}
 #sobre input{background:none;color:rgb(0, 165, 177);border:none;outline:none;}
@@ -82,23 +82,23 @@ header nav #personal a:hover, header nav #social a:hover{color:#fff;}
 #portfolio .recente img{padding:5px;width:100%;box-shadow:0px 0px 5px rgb(0, 165, 177);}
 
 @media screen and (max-width:1000px){
-    .container, header nav{left:20px;right:20px;width:calc(100% - 40px);transform:none;}
+  .container, header nav{left:20px;right:20px;width:calc(100% - 40px);transform:none;}
 }
 
 @media screen and (max-width:845px){
-    #sobre #t1, #sobre #t2, #habilidades #t1, #habilidades #t2{width:100%;height:auto;border:none;}
-    #portfolio .recente{width:calc(50% - 20px);}
+  #sobre #t1, #sobre #t2, #habilidades #t1, #habilidades #t2{width:100%;height:auto;border:none;float:left;}
+  #portfolio .recente{width:calc(50% - 20px);}
+  #sobre td{padding-right:0;}
 }
 @media screen and (max-width:680px){
+  #sobre img{width:80px;}
   :target{scroll-margin-top:80px;}
   header{height:80px;}
-
-header nav #personal{top:45px;left:0px;}
-
-#hero #photo{top:80px;height:calc(100% - 80px);}
-
-
+  header nav #personal{top:45px;left:0px;}
+  #hero #photo{top:80px;height:calc(100% - 80px);}
   #portfolio .recente{width:100%;}
+
+  #sobre #t1, #habilidades #t1, #habilidades #t2{min-width:200px;}
 }
 
 footer{height:45px;background:#000000aa;font:13px monospace;color:rgb(0, 165, 177);font-weight:bold;}
