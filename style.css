@@ -49,6 +49,7 @@ header nav #personal a:hover, header nav #social a:hover{color:#fff;}
 #sobre img{width:120px;border-radius:50%;border:3px dotted rgb(0, 165, 177);margin-right:10px;}
 #sobre th{font:23px monospace;text-align:left;height:40px;color:rgb(0, 165, 177);}
 #sobre td{font:14px monospace;padding-right:20px;text-align:justify;color:rgb(0, 165, 177);}
+#sobre i{color:rgb(0, 165, 102);}
 #sobre table input{width:100%;}
 #sobre .input{background:#000;border-radius:5px;font:10px monospace;padding:2px 10px;text-align:left;box-shadow: 0px 0px 2px rgb(0, 165, 177);}
 #sobre input{background:none;color:rgb(0, 165, 177);border:none;outline:none;}
