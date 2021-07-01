@@ -25,9 +25,10 @@ section{position:relative;display:flex;width:100%;}
 
 header{position:fixed;top:0px;left:0px;z-index:1;width:100%;height:50px;background:#000000aa;box-shadow: 0px 2px 15px rgb(0, 165, 177);}
 header nav{position:relative;top:0px;left:50%;transform:translateX(-50%);width:1000px;height:100%;}
-header nav img{position:absolute;top:8px;left:50%;transform:translateX(-50%);filter:invert(1);height:34px;display:none;}
-header nav #personal{position:absolute;top:15px;left:0px;}
-header nav #social{position:absolute;top:20px;right:0px;font:13px monospace;}
+header nav img{position:absolute;top:8px;left:0px;filter:invert(1);height:34px;}
+header nav img:hover{filter:invert(43%) sepia(82%) saturate(2662%) hue-rotate(155deg) brightness(97%) contrast(99%);cursor:pointer;}
+header nav #personal{position:absolute;top:15px;left:180px;}
+header nav #social{position:absolute;top:18px;right:0px;font:13px monospace;}
 header nav #personal a{font:13px monospace;font-weight:bold;margin-right:20px;}
 header nav #personal a:link, #personal a:visited{text-decoration:none;color:rgb(0, 165, 177);}
 header nav #social a{margin-left:5px;}
@@ -90,11 +91,15 @@ header nav #personal a:hover, header nav #social a:hover{color:#fff;}
   #portfolio .recente{width:calc(50% - 20px);}
   #sobre td{padding-right:0;}
 }
+
+@media screen and (max-width:780px){
+  .tel{display:none;}
+}
 @media screen and (max-width:680px){
   #sobre img{width:80px;}
   :target{scroll-margin-top:80px;}
   header{height:80px;}
-  header nav #personal{top:45px;left:0px;}
+  header nav #personal{top:49px;left:0px;}
   #hero #photo{top:80px;height:calc(100% - 80px);}
   #portfolio .recente{width:100%;}
 
