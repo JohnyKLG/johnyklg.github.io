@@ -5,7 +5,7 @@ function heroAdjust(){
     if(container > 805){
         hero.style.height = 'calc(100vh - '+sobre.offsetHeight+'px)';
     }else{
-        var mobile = sobre.offsetHeight - 210;
+        var mobile = sobre.offsetHeight - 510;
         hero.style.height = 'calc(100vh - '+mobile+'px)';
     }
 
